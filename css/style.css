@@ -1,0 +1,783 @@
+@charset "UTF-8";
+/* fonts */
+@font-face {
+  font-family: "Bellota Text";
+  src: url("./../src/fonts/BellotaText-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Parisienne";
+  src: url("./../src/fonts/Parisienne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../src/fonts/Montserrat-Light.ttf") format("truetype");
+}
+/*todo el documento*/
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(172.19deg, #842DC9 -7.12%, #35C287 99.37%);
+  overflow-x: hidden;
+}
+
+/*Header*/
+header {
+  background: url("./../src/images/Header.png") no-repeat center center;
+  background-size: cover;
+  height: 530px;
+  display: flex;
+  justify-content: flex-end;
+}
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  -webkit-animation: slide-in-blurred-right 2s;
+  animation: slide-in-blurred-right 2s;
+}
+header section img {
+  width: 60px;
+  top: 23px;
+  left: 84px;
+}
+header section h1 {
+  font-family: "Bellota Text", cursive;
+  color: #546277;
+  display: block;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+header section h2 {
+  font-family: "Parisienne", cursive;
+  color: #B22E9D;
+  font-size: 45px;
+}
+
+@keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/*Fin header*/
+/*Barra navegación*/
+nav {
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #546277;
+}
+
+/*Fin barra navegación*/
+/*Sobre mi*/
+section.about-me {
+  display: flex;
+  height: 626px;
+  padding-top: 147px;
+}
+section.about-me div.aboutme-oval {
+  width: 60%;
+  margin-left: 20%;
+  width: 600px;
+  height: 400px;
+  background: #FFFFFF;
+  border-radius: 0px 80px;
+}
+section.about-me div.aboutme-oval h2 {
+  font-family: "Bellota Text";
+  color: black;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+section.about-me div.aboutme-oval p {
+  color: #202020;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+section.about-me div.aboutme-img-circle img {
+  width: 351px;
+  height: 450px;
+  margin-left: -94px;
+  margin-top: -101px;
+}
+section.about-me div.aboutme-img-circle div {
+  width: 190px;
+  height: 190px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 16px solid #F79F8F;
+  text-align: center;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  margin-top: -82px;
+  margin-left: -34px;
+  z-index: 2;
+}
+
+.vector-rosa {
+  width: 100%;
+  height: 340px;
+  margin-top: -140px;
+  margin-bottom: -100px;
+}
+
+/*Fin sobre mi*/
+/*Sección tratamientos*/
+.traitment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traitment-carousel {
+  display: none;
+}
+
+.traitment-position {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.traitment-title {
+  font-family: "Bellota Text";
+  color: #ffffff;
+  padding: 70px 0px 20px 0px;
+}
+
+.traitment-card {
+  margin: 20px;
+  width: 360px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 80px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.traitment-card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.45);
+}
+
+.traitment-card img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 80px 80px 0px 0px;
+}
+
+.traiment-card-title {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+/*Fin sección tratamientos*/
+/* Sección precios */
+.prices {
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.prices-title {
+  font-family: "Bellota Text";
+  color: #546277;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.div-prices ul {
+  border-left: 2px solid #842DC9;
+  height: max-content;
+  padding-left: 8px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+  /* width: 35%; */
+}
+
+.div-prices li {
+  list-style: none;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 163px;
+  margin-right: 163px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.grid-item {
+  grid-area: auto;
+  width: 45%;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img-prices {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-prices img {
+  width: 376px;
+  margin-top: -376px;
+}
+
+/* fin seccion precios */
+/* seccion reserva tu cita */
+.date {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background: url("./../src/images/vector reserva cita.png") no-repeat center;
+  background-size: cover;
+  padding-top: 83px;
+  z-index: 2;
+}
+
+.formulary {
+  display: flex;
+  padding-top: 92px;
+  width: 1193px;
+  justify-content: space-between;
+}
+
+.formulary-img {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 55px;
+}
+
+.formulary-details {
+  Width: 691px;
+  Height: auto;
+  background: #FFFFFF;
+  border: 5px solid #3A50BF;
+  border-radius: 40px 0px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100%;
+  padding-top: 25px;
+}
+
+input, select {
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #3A50BF;
+  border-radius: 20px 0px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.formdate-hour {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formdate-hour div {
+  width: 47%;
+}
+
+.button-privacidad {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+input[type=checkbox] {
+  width: auto;
+  margin-right: 6px;
+}
+
+.button-privacidad button {
+  background: #3A50BF;
+  border-radius: 20px 0px;
+  color: #ffffff;
+  width: 100px;
+  pointer-events: none;
+}
+
+.button-privacidad div {
+  display: flex;
+  align-items: center;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.button-privacidad label {
+  cursor: pointer;
+}
+
+/* fin seccion reserva tu cita */
+/* footer */
+footer {
+  background-color: #ffffff;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-tittle {
+  font-family: "Bellota Text";
+  color: #000000;
+  font-size: 14px;
+  margin-right: 340px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.contact-details li a:hover {
+  text-decoration: underline;
+}
+
+.contact-details li {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.contact-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.contact-nav .nav-li, .navegation .nav-li {
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+  width: calc(100% + 1px);
+  background: #546277;
+  transition: 0.3s;
+}
+
+.contact-nav li:hover .nav-li {
+  height: 21px;
+}
+
+.navegation li:hover .nav-li {
+  height: 25px;
+}
+
+.contact-nav li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.contact-nav a, .navegation a {
+  background: white;
+  height: 20px;
+  margin-top: -0.1px;
+  margin-right: -0.4px;
+}
+
+.navegation a {
+  height: 24px;
+  margin-top: -0.3px;
+  margin-right: -0.7px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Tablet*/
+@media screen and (max-width: 980px) {
+  /*Header*/
+  header {
+    height: 377px;
+  }
+
+  .header-titles {
+    width: 60%;
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h2 {
+    font-size: 33px;
+  }
+
+  /*Fin header*/
+  /*Barra navegación*/
+  .navegation {
+    justify-content: center;
+  }
+
+  /*Fin barra nevagción*/
+  /*Sección sobre mi*/
+  .about-me {
+    width: 100%;
+    padding-top: 100px;
+    height: 560px;
+  }
+
+  .aboutme-oval {
+    margin-left: 17%;
+    width: 419px;
+    height: 390px;
+  }
+
+  .vector-rosa {
+    height: 200px;
+    margin-top: -160px;
+    margin-bottom: -64px;
+  }
+
+  /*Fin sección sobre mi*/
+  /*Sección tratamientos*/
+  .traitment-position {
+    height: 100%;
+    display: none;
+    width: 100vw;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .traitment-carousel {
+    display: block;
+  }
+
+  .carousel img {
+    width: 100vw;
+    height: 545px;
+    object-fit: cover;
+  }
+
+  .traiment-card-title {
+    font-size: 12px !important;
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+
+  .carousel h5 {
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /*Fin seccion tratamientos*/
+  /*Sección precios*/
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .div-prices ul {
+    border-left: 2px solid #842DC9;
+    height: max-content;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    width: 85%;
+  }
+
+  .img-prices img {
+    margin-top: -436px;
+  }
+
+  /*Fin sección precios*/
+  /*Formulario*/
+  .formulary {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulary-img {
+    margin-bottom: 36px;
+    padding-right: 0;
+  }
+
+  /*Footer*/
+  .contact-details {
+    width: 40vw;
+  }
+
+  .contact-nav {
+    font-size: 12px;
+  }
+
+  .contact-details li {
+    font-size: 12px;
+  }
+
+  .copy {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  /*Fin footer*/
+}
+/*Mobile*/
+@media screen and (max-width: 480px) {
+  /*Header*/
+  header {
+    background: url("./../src/images/headerMobile.png") no-repeat center center;
+    background-size: cover;
+    height: 150px;
+  }
+
+  .header-titles {
+    height: 37%;
+    width: 64%;
+    padding-top: 22px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .header-titles-logo {
+    width: 23px;
+  }
+
+  /*bara navegación*/
+  .navegation {
+    font-family: "Bellota Text";
+    font-size: 8px;
+    border-top: 1px solid #546277;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navegation li {
+    padding-right: 18px;
+  }
+
+  /*Fin barra navegación*/
+  /*Sección sobre mi*/
+  .about-me {
+    width: 100%;
+    height: 285px;
+    padding-top: 50px;
+  }
+
+  .aboutme-oval {
+    margin-left: 7%;
+    width: 214px;
+    height: 204px;
+    overflow-y: auto;
+    border-radius: 0px 41px;
+  }
+
+  .img-vanessa {
+    width: 191px;
+    height: 250px;
+    object-fit: contain;
+    margin-left: -53px;
+    margin-top: -18px;
+  }
+
+  .aboutme-circle {
+    margin-left: -30px;
+    margin-top: -98px;
+    width: 120px;
+    height: 120px;
+    border: 10px solid #F79F8F;
+  }
+
+  .aboutme-circle p {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .aboutme-img-circle {
+    z-index: 2;
+  }
+
+  .vector-rosa {
+    height: 112px;
+  }
+
+  /*Fin sección sobre mi*/
+  /*Seccion tratamientos*/
+  .traitment-position {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 100vw;
+  }
+
+  .carousel-item img {
+    object-fit: cover !important;
+    height: 270px;
+  }
+
+  .carousel-item h5 {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .traitment-card {
+    margin: 10px;
+    width: 50vw;
+    height: 183px;
+    border-radius: 30px;
+  }
+
+  .traitment-card img {
+    width: 50vw;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  /*Fin seccion tratamientos*/
+  /*Sección precios*/
+  .img-prices img {
+    margin-top: -100px;
+    width: 235px;
+  }
+
+  .grid-container {
+    font-size: 14px;
+  }
+
+  /*Fin sección precios*/
+  /*Seccion reserva tu cita*/
+  .date img {
+    width: 74vw;
+  }
+
+  .formulary-details {
+    Width: 88vw;
+    padding: 20px;
+  }
+
+  form {
+    width: unset;
+  }
+
+  /*Fin seccion reserva tu cita*/
+  /*Footer*/
+  .contact {
+    justify-content: unset;
+  }
+
+  .contact-nav {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .contact-details {
+    margin-right: 0px;
+    margin-left: 30px;
+  }
+
+  .contact-tittle {
+    margin-top: 8px;
+    margin-right: unset;
+  }
+
+  .contact-direction {
+    width: auto;
+    margin-bottom: 6px;
+  }
+
+  .contact-details a {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-nav .nav-li {
+    display: flex;
+    height: auto;
+    background: #546277;
+    background: white;
+    margin-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
