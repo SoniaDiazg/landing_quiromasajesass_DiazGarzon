@@ -1,0 +1,65 @@
+    /*Header*/
+
+    header{
+        background: url('./../src/images/Header.png') no-repeat center center;
+        background-size: cover;
+        height: 530px;
+        display: flex;
+        justify-content: flex-end;
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+            -webkit-animation: slide-in-blurred-right 2s ;
+            animation: slide-in-blurred-right 2s ;
+            
+            img{
+                width: 60px;
+                top: 23px;
+                left: 84px;
+            }
+
+            h1{
+                font-family: 'Bellota Text', cursive;
+                color: #546277;
+                display: block;
+                font-size: 45px;
+                margin-bottom: 10px
+            }
+
+            h2{
+                font-family: 'Parisienne', cursive;
+                color: #B22E9D;
+                font-size: 45px;
+            }
+        }
+    }
+
+
+    @keyframes slide-in-blurred-right {
+        0% {
+          -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+                  transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+          -webkit-transform-origin: 0% 50%;
+                  transform-origin: 0% 50%;
+          -webkit-filter: blur(40px);
+                  filter: blur(40px);
+          opacity: 0;
+        }
+        
+        100% {
+          -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+                  transform: translateX(0) scaleY(1) scaleX(1);
+          -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% 50%;
+          -webkit-filter: blur(0);
+                  filter: blur(0);
+          opacity: 1;
+        }
+    }
+      
+/*Fin header*/
