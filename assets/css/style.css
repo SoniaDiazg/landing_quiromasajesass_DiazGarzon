@@ -1,0 +1,518 @@
+/*=================
+Fonts
+===================*/
+@font-face {
+    font-family: Montserrat;
+    src: url(./../rsc/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Parissienne;
+    src: url(./../rsc/fonts/Parisienne-Regular.ttf);
+}
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Montserrat";  
+}
+
+body {
+    background-color: #fafafa; 
+}
+
+/* ==============
+Style header 
+=================*/
+
+.topBar {
+    width: 100%;
+    height: 51px;
+    background: rgba(252, 226, 227, 0.5);
+}
+
+h1 {
+    font-family: "Parissienne";
+    color: #101010;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 62px;
+    padding-top: 100px;
+}
+
+#profesion {
+    font-family: "Montserrat";
+    color: #101010;
+    font-size: 40px;
+    text-shadow: unset;
+}
+
+#headerFlor {
+    width: 100%;
+    height: 643px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#headerTitulo {
+    height: 643px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+}
+
+
+/* ==============
+Style nav
+=================*/
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #fdfdfd;
+    box-shadow: 0px 4px 4px rgba(72, 71, 71, 0.25);
+    font-size: 20px;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 23px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+
+#raya a{
+    position: relative;
+    color:#000000;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+#raya a:after{
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #F79F8F;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);        
+}
+
+#raya a:hover:after{
+    opacity:1;
+    transform: translateY(15px)
+}
+
+/*===============
+Style seccion sobre mi
+=================*/
+
+#seccionSobremi {
+    margin-top: 120.50px;
+}
+
+.CartaSobremi {
+    width: 578px;
+    height: 204px;
+    left: 108px;
+    padding-right: 30px;
+    background: #fdfdfd;
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 114px;
+}
+
+div p {
+    font-size: 16px;
+}
+
+span {
+    color:#1C5159;
+    font-weight:900;
+}
+
+#divTitulaciones {
+    width: auto;
+}
+
+div img {
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+#divTitulaciones h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#emoticono1 {
+    padding-left: 16px;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+#emoticono2 {
+    width: 139px;
+    height: 141.88px;  
+}
+
+#emoticono3 {
+    width: 120px;
+    height: 122.87px;
+    padding-left: 23px;
+}
+
+#circuloFrase {
+    width: 230px;
+    height: 234px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 5px solid #F79F8F;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.27);
+    transform: translate(50%, 10%);
+}
+
+#fraseCirculo{
+    font-family: "Montserrat";
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+    margin-top: 87px;
+}
+
+#fraseFinal {
+    width: 301px;
+    height: 139px;
+
+    font-family: "Parissienne";
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+#flecha {
+    width: 200px;
+    height: 300px;
+    transform: translate(0%, 50%);
+}
+
+#sobreMi {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+#divFraseFlecha {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/*===============
+Style seccion precios
+=================*/
+
+#seccionPrecios {
+    width: 100%;
+    height: 1544px;
+    margin-top: 101px;
+    overflow: hidden;
+    
+    background: #D6EEE1;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), inset 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 500px 0px 300px;
+}
+
+h3 {
+    text-align: center;
+    
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* DIV MASAJES */
+
+.preciosMasajes {
+    width: 168px;
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px #D6EEE1;
+    border-radius: 8px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.preciosMasajes p {
+    padding-bottom: 10px;
+}
+
+#tartejasMasajes {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DIV MADEROTERAPIA */
+
+#tarjetasMaderoterapia {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preciosMaderoterapia {
+
+    width: 248px;
+    height: 166px;
+    background: #fdfdfd;
+    box-shadow: 0px 4px 10px #D6EEE1;
+    border-radius: 8px;
+    margin-right: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.preciosMaderoterapia p {
+    padding: 0px 30px;
+    margin-top: 10px;
+}
+
+
+/* DIV DRENAJE / ACUPUNTURA */
+
+#precioDrenaje, #precioAcupuntura {
+    width: 190px;
+    height: 112px;
+    background: #fdfdfd;
+    box-shadow: 0px 4px 10px #D6EEE1;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 24%;
+}
+
+#precioDrenaje, #precioAcupuntura p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#tarjetasDrenajeAcupuntura H3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px
+}
+
+#tarjetasDrenajeAcupuntura {
+
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaAcupuntura {
+    padding-left: 20%;
+}
+
+/* DIV BONOS */
+
+.preciosBonos {
+    width: 248px;
+    height: 166px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px #D6EEE1;
+    border-radius: 8px;
+    margin-left: 38px;
+    
+}
+
+.preciosBonos p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+#tarjetaBonos {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/*=================
+Style seccion contacto
+===================*/
+
+#contacto {
+    width: 100%;
+    margin-top: 101px;
+}
+
+#hola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #785AEF;
+    border-radius: 5px;
+    margin-left: 40%;
+    padding-bottom: 32px;
+}
+
+
+
+#contacto p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#hola img {
+    width: 150px;
+    height: 150px;
+
+    position: relative;
+    top: 32px;
+}
+
+#whatsapp {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 58px;
+
+    margin-right: 34px;
+}
+
+#whatsapp img {
+    width: 58px;
+}
+
+#map {
+    background-color: #785AEF;
+    border-radius: 7px;
+    width: 102px;
+    height: 46px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+   
+}
+
+#map a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*=================
+Style seccion cita
+===================*/
+
+#seccionCita {
+    width: 100%;
+    height: 736px;
+    background: linear-gradient(253.27deg, #81CAA1 -50.23%, #FFFFFF 74.72%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 300px 0px;
+    margin-top: 102px;
+}
+
+#seccionCita div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 171px;
+}
+
+#rectangulo2 p {
+    text-align: center;
+    font-size: 20px;
+    padding: 21px 144px;
+}
+
+#botonCita {
+    width: 190px;
+    height: 40px;
+
+    background: #785AEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    border: none;
+}
+
+#botonCita a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#botonCita:hover {
+
+    background-color:#D6EEE1;
+}
+
+#florLoto {
+    width: 219.59px;
+    height: 221.84px;
+}
+
+
+
+
+
