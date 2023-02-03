@@ -30,6 +30,7 @@ Style header
     width: 100%;
     height: 51px;
     background: rgba(252, 226, 227, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -136,6 +137,10 @@ nav ul li {
 #raya a:hover:after{
     opacity:1;
     transform: translateY(15px)
+}
+
+#navMobile {
+    display: none;
 }
 
 /*===============
@@ -519,7 +524,108 @@ Style seccion cita
     height: 221.84px;
 }
 
+/*
+====================
+Responsive
+====================
+*/
 
+@media screen and (max-width: 480px) {
+
+    nav {
+        display: none;
+    }
+
+    #navMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 95%;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(252, 226, 227);
+        text-align: center;
+        box-shadow: none;
+    }
+
+    #navMobile a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    #navMobile img {
+        width: 50px;
+    }
+
+    #navMobile p {
+        font-size: 14px;
+    }
+
+    #headerFlor {
+        transform: rotate(180deg);
+        z-index: -10;
+    }
+
+    #headerTitulo {
+        height: 170px;
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #profesion {
+        padding-top: 5px;
+        font-size: 11px;
+
+    }
+
+    /*
+    =======================
+    Seccion sobre mi
+    =======================
+    */
+
+    #seccionSobremi {
+        margin-top: 0px;
+    }
+
+    #sobreMi {
+        flex-direction: column;
+    }
+
+    #cartasSobremi {
+        width: 100%;
+    }
+
+    .CartaSobremi {
+        padding-right: 0px;
+        margin: 10px 10px;
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    div p {
+        font-size: 12px;
+    }
+
+    #divTitulaciones h4 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    #divTitulaciones {
+        padding: 14px;
+    }
+}
 
 
 
