@@ -30,6 +30,13 @@ Style header
     width: 100%;
     height: 51px;
     background: rgba(252, 226, 227, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topBar img {
+    width: 30px;
 }
 
 h1 {
