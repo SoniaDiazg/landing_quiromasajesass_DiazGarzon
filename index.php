@@ -78,10 +78,12 @@
             </li>
 
             <li>
-                <a href="#seccionPrecios">Tratamientos</a>
+                <a href="#seccionTratamientos">Tratamientos</a>
             </li>
             <li>
-                <a href="#seccionCita">Cita Previa</a>
+                <button class="botonCita">
+                    <a href="https://wa.me/34613003953" target="none"><strong>Reservar Cita</strong></a>
+                </button>
             </li>
             <li>
                 <a href="#seccionContacto">Contacto</a>
@@ -110,37 +112,38 @@
         <div id="sobreMi">
             <div id="cartasSobremi">
                 <div class="CartaSobremi">
-                    <img id="emoticono1" src="./assets/rsc/img/Emoticono1.svg" alt="emoticono1">
-                    <p>
-                        ¡Hola! soy <span>Vanessa</span>, quiromasajista con mas de 3 años de experiencia.
-                        <br>
-                        Mi inquietud siempre ha sido la de formarme para brindar el mejor servicio.
-                    </p>
-                </div>
-
-                <div class="CartaSobremi">
-
-                    <img  id="emoticono2" src="./assets/rsc/img/Emoticono2.svg" alt="Emoticono2">
-
-                    <div id="divTitulaciones">
-                        <h4>Ademas cuento con las siguientes <span>titulaciones:</span></h4>
-                        <ul>
-                            <li>Maderoterapia corporal y facial</li>
-                            <li>Quiromasaje</li>
-                            <li>Drenaje linfático brasileño</li>
-                            <li>Kinesiotape</li>
-                            <li>Kinesiología alimenticia</li>
-                            <li>Auriculopuntura</li>
-                        </ul>
+                    <div class="contentCartaSobremi">
+                        <img class="emoticono" src="assets/rsc/img/Emoticono1.svg" alt="emoticono1">
+                        <p>
+                            ¡Hola! soy <span>Vanessa</span>, quiromasajista con mas de 3 años de experiencia.
+                            <br>
+                            Mi inquietud siempre ha sido la de formarme para brindar el mejor servicio.
+                        </p>
                     </div>
-
                 </div>
 
                 <div class="CartaSobremi">
+                    <div class="contentCartaSobremi">
+                        <img  class="emoticono" src="assets/rsc/img/Emoticono2.svg" alt="Emoticono2">
+                        <div id="divTitulaciones">
+                            <h4>Ademas cuento con las siguientes <span>titulaciones:</span></h4>
+                            <ul>
+                                <li>Maderoterapia corporal y facial</li>
+                                <li>Quiromasaje</li>
+                                <li>Drenaje linfático brasileño</li>
+                                <li>Kinesiotape</li>
+                                <li>Kinesiología alimenticia</li>
+                                <li>Auriculopuntura</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                    <img id="emoticono3" src="./assets/rsc/img/Emoticono3.svg" alt="emoticono3">
-
-                    <p> Puedes venir a visitiarme en plena Sierra de Aracena y Picos de Aroche, en Huelva. Estaré encantada de ofrecerte el bienestar que necesitas.</p>
+                <div class="CartaSobremi">
+                    <div class="contentCartaSobremi">
+                        <img class="emoticono" src="assets/rsc/img/Emoticono3.svg" alt="emoticono3">
+                        <p> Puedes venir a visitiarme en plena Sierra de Aracena y Picos de Aroche, en Huelva. Estaré encantada de ofrecerte el bienestar que necesitas.</p>
+                    </div>
                 </div>
             </div>
 
@@ -167,31 +170,31 @@
                     SECCION TRATAMIENTOS
     ========================================================-->
 
-    <section id="seccionPrecios">
+    <section id="seccionTratamientos">
 
         <h2>TRATAMIENTOS</h2>
 
         <div>
             <h3>MASAJES</h3>
 
-            <div id="tartejasMasajes">
+            <div class="contentTarjetas">
 
                 <!-- <div class="preciosMasajes"> 
                     <p><b>Desde 30 €</b></p>
                     <p>Consulta</p> 
                 </div> -->
 
-                <div class="preciosMasajes">
+                <div class="tarjeta">
                     <!-- <p><b>25 €</b></p>  -->
                     <p>Masaje relajante (piernas y/o cuerpo entero)</p> 
                 </div>
 
-                <div class="preciosMasajes">
+                <div class="tarjeta">
                     <!-- <p><b>30 €</b></p>  -->
                     <p>Descarga Muscular</p> 
                 </div>
 
-                <div class="preciosMasajes">
+                <div class="tarjeta">
                     <!-- <p><b>45 €</b></p> -->
                     <p>Masaje relajante (cuerpo entero)</p> 
                 </div>
@@ -201,18 +204,18 @@
         <div>
             <h3>MADEROTERAPIA</h3>
 
-            <div id="tarjetasMaderoterapia">
-                <div class="preciosMaderoterapia">
+            <div class="contentTarjetas">
+                <div class="tarjeta">
                     <!-- <p><b>20 €/Sesión</b></p> -->
                     <p>Maderoterapia facial</p>
                 </div>
 
-                <div class="preciosMaderoterapia">
+                <div class="tarjeta">
                     <!-- <p><b>30 €/Sesión</b></p> -->
                     <p>Maderoterapia  corporal ( zona a eligir: brazos, abdomen, piernas o gluteos )</p>
                 </div>
 
-                <div class="preciosMaderoterapia">
+                <div class="tarjeta">
                     <!-- <p><b>40 €/Sesión</b></p> -->
                     <p>Maderoterapia corporal (2 zonas)</p>
                 </div>
@@ -220,51 +223,38 @@
             </div>
         </div>
 
-        <div id="tarjetasDrenajeAcupuntura">
-            <div class="tarjetaDrenaje">
-                <h3>DRENAJE LINFÁTICO (Técnica brasileña)</h3>
-                <div id="precioDrenaje">
-                    <!-- <p><b>50 €/sesión</b></p> -->
-                    <p>Drenaje linfático</p>
-                </div>
-            </div>
-            
-            <div class="tarjetaAcupuntura">
-                <h3>AURICULOCUNTURA / ACUPUNTURA</h3>
-                <div id="precioAcupuntura">
-                    <!-- <p><b>20 €/sesión</b></p> -->
-                    <p>Auriculopuntura/
-                        Acupuntura</p>
-                </div>
-            </div>
-            
+        <div>
+            <h3>DRENAJE LINFÁTICO (Técnica brasileña)</h3>
+            <h3>AURICULOCUNTURA / ACUPUNTURA</h3>
         </div>
 
         <div >
 
             <h3>PACKS / BONOS</h3>
 
-            <div id="tarjetaBonos">
-                <div class="preciosBonos">
+            <div class="contentTarjetas">
+                <div class="tarjeta">
                     <p><b>130 €/bono</b></p>
                     <p>Bono 5+1 gratis Maderoterapia  corporal
                         (zona a eligir: brazos, abdomen, piernas o gluteos)</p>
                 </div>
-                <div class="preciosBonos">
+                <div class="tarjeta">
                     <p><b>145 €/bono</b></p>
                     <p>Bono 5+1 gratis Maderoterapia  corporal
                         ( 2 zonas )</p>
                 </div>
-                <div class="preciosBonos">
+                <div class="tarjeta">
                     <p><b>35 €/sesion</b></p>
                     <p>Masaje relajante + masaje descontracturante
                         (piernas + espalda)</p>
                 </div>
-                <div class="preciosBonos">
+            </div>
+            <div class="contentTarjetas" id="ultimasTarjetas">
+                <div class="tarjeta">
                     <p><b>110 €/bono</b></p>
                     <p>Bono 5+1 gratis Maderoterapia  facial</p>
                 </div>
-                <div class="preciosBonos">
+                <div class="tarjeta">
                     <p><b>35 €/bono</b></p>
                     <p>Bono 3 sesiones auriculopuntura</p>
                 </div>
@@ -336,8 +326,8 @@
                     Mientras lo terminamos puedes pedir cita a traves de Whatsapp
                 </p>
                 
-                <button id="botonCita">
-                    <a href="https://wa.me/34613003953" target="none">Reservar Cita</a>
+                <button class="botonCita">
+                    <a href="https://wa.me/34613003953" target="none"><strong>Reservar Cita</strong></a>
                 </button>
             </div>
             
@@ -355,9 +345,9 @@
 FOOTER
 ===============  
 -->
-
+    <?php $year = date('Y');?>
     <footer>
-        <p>&copy; VDG Quiromasajista 2023</p>
+        <p>&copy; VDG Quiromasajista <?php echo $year; ?></p>
     </footer>
 <!--
 ==================
