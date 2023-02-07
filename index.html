@@ -89,12 +89,7 @@
                 <a href="#seccionContacto">Contacto</a>
             </li>
         </ul>  
-
     </nav>
-
-    <?php 
-        include_once 'includes/nav.inc.php';
-    ?>
     <!--
     ========================================================
                             FIN NAV
@@ -345,9 +340,8 @@
 FOOTER
 ===============  
 -->
-    <?php $year = date('Y');?>
     <footer>
-        <p>&copy; VDG Quiromasajista <?php echo $year; ?></p>
+        <p>&copy; VDG Quiromasajista 2023</p>
     </footer>
 <!--
 ==================
@@ -356,9 +350,35 @@ FIN FOOTER
 -->
 
 <!--===============Nav mobile===============-->
-<?php 
-include_once 'includes/navMobile.inc.php';
-?>
+<nav id="navMobile">
+    <div>
+        <a href="#seccionSobremi">
+            <img src="assets/rsc/img/ph_info-thin.svg" alt="">
+            <p>Sobre mi</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="#seccionPrecios">
+            <img src="assets/rsc/img/ph_flower-lotus-thin.svg" alt="">
+            <p>Tratamientos</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="https://wa.me/34613003953" target="_blank">
+            <img src="assets/rsc/img/ph_calendar-check-thin.svg" alt="">
+            <p>Reservar cita</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="#seccionContacto">
+            <img src="assets/rsc/img/ph_map-pin-line-thin.svg" alt="">
+            <p>Contacto</p>
+        </a>
+    </div>
+</nav>
 <!--===============Fin Nav mobile===============-->
 <script type="text/javascript" src="./vendor/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="./vendor/carrusel.js"></script>

@@ -643,19 +643,20 @@ Responsive
         margin: 5px;
     }
 
-    /* div p {
-        font-size: 12px;
-        margin: 10px;
-    } */
+    .emoticono {
+        width: 85px;
+    }
 
     #divTitulaciones h4 {
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 20px;
+        
     }
 
     #divTitulaciones {
         padding: 14px;
+        margin: 0px;
     }
 
     #circuloFraseFlecha {
@@ -705,99 +706,19 @@ Responsive
     overflow: hidden;
     background: #D6EEE1;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), inset 0px 10px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 200px 0px 200px;
-    }
-
-    #tartejasMasajes {
-        flex-direction: column;
-    }
-
-    .preciosMasajes {
-    width: 168px;
-    height: 112px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px #D6EEE1;
-    border-radius: 8px;
-    margin-right: 0px;
+    border-radius: 0px 100px 0px 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 10px;
     }
 
-    .preciosMasajes p {
-    padding-bottom: 0px;
-    padding: 11px;
-    }
-
-    #tarjetasMaderoterapia {
+    .contentTarjetas {
+        margin: 0px 0px;
         flex-direction: column;
     }
 
-    .preciosMaderoterapia {
-        width: 168px;
-        height: 112px;
+    .tarjeta {
+        margin: 10px;
         margin-right: 0px;
-        margin-bottom: 10px;
-    }
-
-    .preciosMaderoterapia p {
-        padding: 10px;
-        margin-top: 0px;
-        font-size: 14px;
-    }
-
-    #tarjetasDrenajeAcupuntura {
-        flex-direction: column;
-        padding-left: 0px;
-        padding: 20px;
-    }
-
-    #tarjetaDrenaje {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #precioDrenaje {
-        display: none;
-    }
-
-    .tarjetaAcupuntura {
-        padding-left: 0px;
-    }
-
-    #precioAcupuntura {
-        display: none;
-    }
-
-    #tarjetasDrenajeAcupuntura h3 {
-        margin-top: 0px;
-        margin: 30px, 4px;
-    }
-
-    #tarjetaBonos {
-        flex-direction: column;
-        padding-bottom: 100px;
-    }
-
-    .preciosBonos {
-        width: 168px;
-        height: 112px;
-        margin-bottom: 10px;
-        margin-left: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        
-    }
-
-    .preciosBonos p {
-        margin-top: 0px;
-        font-size: 13px;
     }
 
     /*
@@ -836,7 +757,7 @@ Responsive
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 0px;
+        padding-top: 20pxpx;
         margin: 20px;
     }
 
