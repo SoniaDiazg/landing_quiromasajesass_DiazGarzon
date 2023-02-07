@@ -91,7 +91,7 @@
     </nav>
 
     <?php 
-        include_once 'includes/navMobile.php';
+        include_once 'includes/nav.inc.php';
     ?>
     <!--
     ========================================================
@@ -351,9 +351,9 @@
     ========================================================-->
 
 <!--
-    ===============
-        FOOTER
-    ===============  
+===============
+FOOTER
+===============  
 -->
 
     <footer>
@@ -361,10 +361,16 @@
     </footer>
 <!--
 ==================
-            FIN FOOTER
+FIN FOOTER
 ==================
 -->
-    <script type="text/javascript" src="./vendor/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="./vendor/carrusel.js"></script>
+
+<!--===============Nav mobile===============-->
+<?php 
+include_once 'includes/navMobile.inc.php';
+?>
+<!--===============Fin Nav mobile===============-->
+<script type="text/javascript" src="./vendor/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./vendor/carrusel.js"></script>
 </body>
 </html>
