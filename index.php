@@ -31,10 +31,12 @@
     <header>
 
         <div class="topBar">
-            <a href="https://wa.me/34613003953" target="_blank"><img src="assets/rsc/img/ph_whatsapp-logo-light.svg" alt="Logo Whatsapp"></a>
-            <a href="https://goo.gl/maps/BeQWoJ54gStPh9dK9" target="_blank"><img src="assets/rsc/img/ph_map-pin-light.svg" alt="Logo Mapa"></a>
-            <a href="https://www.instagram.com/dgquirovanessa/?hl=es" target="_blank"><img src="assets/rsc/img/ph_instagram-logo-light.svg" alt="Logo Instagram"></a>
-            <a href="https://www.facebook.com/QuiroVanessaDG/" target="_blank"><img src="assets/rsc/img/ph_facebook-logo-light.svg" alt="Logo Facebook"></a>
+            <div id="RRSS">
+                <a href="https://wa.me/34613003953" target="_blank"><img src="assets/rsc/img/ph_whatsapp-logo-light.svg" alt="Logo Whatsapp"></a>
+                <a href="https://goo.gl/maps/BeQWoJ54gStPh9dK9" target="_blank"><img src="assets/rsc/img/ph_map-pin-light.svg" alt="Logo Mapa"></a>
+                <a href="https://www.instagram.com/dgquirovanessa/?hl=es" target="_blank"><img src="assets/rsc/img/ph_instagram-logo-light.svg" alt="Logo Instagram"></a>
+                <a href="https://www.facebook.com/QuiroVanessaDG/" target="_blank"><img src="assets/rsc/img/ph_facebook-logo-light.svg" alt="Logo Facebook"></a>
+            </div>
         </div>
 
         <div id="headerTitulo">
@@ -88,36 +90,9 @@
 
     </nav>
 
-    <nav id="navMobile">
-        <div>
-            <a href="#seccionSobremi">
-                <img src="assets/rsc/img/ph_info-thin.svg" alt="">
-                <p>Sobre mi</p>
-            </a>
-        </div>
-
-        <div>
-            <a href="#seccionPrecios">
-                <img src="assets/rsc/img/ph_flower-lotus-thin.svg" alt="">
-                <p>Tratamientos</p>
-            </a>
-        </div>
-
-        <div>
-            <a href="#seccionCita">
-                <img src="assets/rsc/img/ph_calendar-check-thin.svg" alt="">
-                <p>Reservar cita</p>
-            </a>
-        </div>
-
-        <div>
-            <a href="#seccionContacto">
-                <img src="assets/rsc/img/ph_map-pin-line-thin.svg" alt="">
-                <p>Contacto</p>
-            </a>
-        </div>
-
-    </nav>
+    <?php 
+        include_once 'includes/navMobile.php';
+    ?>
     <!--
     ========================================================
                             FIN NAV
@@ -310,39 +285,36 @@
     ========================================================-->
         <section id="contacto">
             <div id="hola">
+                <div id="textContacto">
                 
-                <img src="./assets/rsc/img/bocadilloHola.svg" alt="bocadilloHola">
-
-                <div>
-                    <p>Contacta conmigo mediante Whatsapp 
-                        <br>
-                        <br> 
-                        <b>613 00 39 53</b> 
-                    </p>
-                    <p>
-                        Horario <br>
-                        Lunes a Viernes <br>
-                        09:30 - 13.30 / 16.30 - 21.00
-                    </p>
-                    <p>
-                        Puedes encontrarme en <br>
-                        C/Campito, 6 Aracena
-                    </p>
+                    <img src="./assets/rsc/img/bocadilloHola.svg" alt="bocadilloHola">
+    
+                    <div>
+                        <p>Contacta conmigo mediante Whatsapp 
+                            <br>
+                            <br> 
+                            <b>613 00 39 53</b> 
+                        </p>
+                        <p>
+                            Horario <br>
+                            Lunes a Viernes <br>
+                            09:30 - 13.30 / 16.30 - 21.00
+                        </p>
+                        <p>
+                            Puedes encontrarme en <br>
+                            C/Campito, 6 Aracena
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div id="botones">
-                <button id="whatsapp">
-                    <a href="https://wa.me/34613003953" target="none">
+    
+                <div id="botones">
+                    <a href="https://wa.me/34613003953" target="none" id="whatsapp">
                         <img src="./assets/rsc/img/boton wsp.svg" alt="boton whatsapp">
                     </a>
-                </button>
-    
-                <button id="map">
-                    <a href="https://goo.gl/maps/BeQWoJ54gStPh9dK9" target="none">Como llegar</a>
-                </button>
+
+                    <a href="https://goo.gl/maps/BeQWoJ54gStPh9dK9" target="none" id="map">Como llegar</a>
+                </div>
             </div>
-            
         </section>
     <!--
     ========================================================
@@ -369,12 +341,9 @@
                 </button>
             </div>
             
-            <div>
-                <img id="florLoto" src="./assets/rsc/img/florloto.svg" alt="florLoto">
+            <div class="scale-down-center">
+                <img id="florLoto" src="./assets/rsc/img/florlotoRosa.png" alt="florLoto">
             </div>
-                
-            
-            
         </section>
     <!--
     ========================================================
@@ -387,8 +356,8 @@
     ===============  
 -->
 
-    <footer id="seccionContacto">
-
+    <footer>
+        <p>&copy; VDG Quiromasajista 2023</p>
     </footer>
 <!--
 ==================
